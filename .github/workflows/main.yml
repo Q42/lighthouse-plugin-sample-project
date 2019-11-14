@@ -4,6 +4,7 @@ jobs:
   lighthouse:
     runs-on: ubuntu-latest
     steps:
+      - uses: actions/checkout@v1
       - run: npm install
       - run: npm install lighthouse
       - run: mv node_modules/lighthouse-plugin-social-sharing .
