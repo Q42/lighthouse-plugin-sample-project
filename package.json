@@ -1,0 +1,7 @@
+{
+  "name": "lighthouse-plugin-sample-project",
+  "version": "1.0.0",
+  "devDependencies": {
+    "lighthouse-plugin-social-sharing": "0.0.1"
+  }
+}

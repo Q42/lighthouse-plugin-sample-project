@@ -1,0 +1,11 @@
+{
+  "ci": {
+    "collect": {
+      "settings": {
+        "plugins": [
+          "lighthouse-plugin-social-sharing"
+        ]
+      }
+    }
+  }
+}

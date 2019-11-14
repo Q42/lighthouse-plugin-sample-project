@@ -1,0 +1,19 @@
+name: Lighthouse Audit
+on: 
+  pull_request:
+    types: labeled
+jobs:
+  lighthouse:
+    runs-on: ubuntu-latest
+    steps:
+      - run: npm install
+      - run: npm install lighthouse
+      - run: mv node_modules/lighthouse-plugin-social-sharing .
+      - name: Audit URLs using Lighthouse
+        uses: treosh/lighthouse-ci-action@v2
+        with:
+          urls: |
+            https://haags.nu
+            http://roelf-jandevries.nl
+          temporaryPublicStorage: true
+          configPath: ./lighthouserc.json
