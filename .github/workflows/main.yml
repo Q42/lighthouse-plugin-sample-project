@@ -7,7 +7,7 @@ jobs:
       - uses: actions/checkout@v1 # checkout this repo, so you can run an 'npm install'
       - run: npm install # needed to install your Lighthouse Plugin
       - name: Audit URLs using Lighthouse
-        uses: treosh/lighthouse-ci-action@v2
+        uses: treosh/lighthouse-ci-action@master
         with:
           urls: |
             https://lighthouse-plugin-sample-project.glitch.me/
