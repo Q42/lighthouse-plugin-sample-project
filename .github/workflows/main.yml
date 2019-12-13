@@ -6,8 +6,6 @@ jobs:
     steps:
       - uses: actions/checkout@v1 # checkout this repo, so you can run an 'npm install'
       - run: npm install # needed to install your Lighthouse Plugin
-      - run: npm install lighthouse # install missing Lighthouse, this is currently a hack
-      - run: mv node_modules/lighthouse-plugin-social-sharing . # move the Lighthouse plugin one folder upward, this is currently a hack,
       - name: Audit URLs using Lighthouse
         uses: treosh/lighthouse-ci-action@v2
         with:
